@@ -1,0 +1,20 @@
+data:
+  path: data/dataset.csv
+  target: target
+  test_size: 0.2
+  random_state: 42
+
+ml:
+  task: classification
+  model: random_forest
+  params:
+    n_estimators: 100
+    max_depth: null
+    random_state: 42
+
+dl:
+  task: classification
+  hidden_dims: [128, 64, 32]
+  epochs: 50
+  lr: 0.001
+  batch_size: 32
